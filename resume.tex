@@ -1,98 +1,93 @@
 \documentclass{resume} 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.6in]{geometry} 
+\usepackage{hyperref}
+\usepackage{tabularx}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{John Snow} % Your name
-\address{North of the Wall, Outside the reach of every kingdom} 
-\address{(+0)9999999999 \\ johnsnow@realnorth.com}
+\newcommand{\itab}[2]{\hspace{0em}\rlap{#1}}
+\name{Mohammad Almerri} % Your name
+\address{(+1)202-568-5475 \\ malmerri42@gmail.com}
+\address{Indianapolis \\ IN 46202}
 
 \begin{document}
 
 \begin{rSection}{Education}
 
+{\bf Purdue School of Engineering and Technology, IUPUI} \hfill {\em January 2019 - December 2021} 
+\\ Thesis based MS in Computer Engineering.\hfill { GPA: 3.9 }
 
-{\bf Indian Institute of Technology, Gandhinagar} \hfill {\em July 2016 - May 2020} 
-\\ Bachelor of Engineering, Computer.\hfill { Overall CGPA: 9.05 }
+{\bf Purdue School of Engineering and Technology, IUPUI} \hfill {\em August 2013 - May 2018} 
+\\ BS in Computer Engineering with a Minor in Mathematics.
+\hfill { GPA: 3.8 }
 
-\end{rSection}
-
-\begin{rSection}{Career Objective}
- To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
-\end{rSection}
-
-\begin{rSection}{Projects}
-{\bf GitHub Notifier}
-\\This project aims at providing real time information of events from GitHub and notify you accordingly. The project is in ready-to-deployment stage on a demo server as a cron-job. The notification engine  used for real time tracking is completely based on the python implementation assembled in an Android App with firebase cloud support.
-
-{\bf GitHub Notifier}
-\\This project aims at providing real time information of events from GitHub and notify you accordingly. The project is in ready-to-deployment stage on a demo server as a cron-job. The notification engine  used for real time tracking is completely based on the python implementation assembled in an Android App with firebase cloud support.
 
 \end{rSection}
 
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages \ & C, C++, Python, Java, C\#  \\
-Technologies & MVC, HTML5, CSS, Latex\\
-Tools & MikTex, Kile, Netbeans \\
-Databases & MySql, Oracle, Sqlite, NoSql\\
-Cloud Technologies & Firebase, AWS, Google Cloud\\
-Version Control & Github
-\end{tabular}
-
+\begin{rSection}{Technical Skills}
+\begin{tabularx}{\textwidth}{ @{} >{\bfseries}l @{\hspace{6ex}}X }
+Languages: & Assembly-ARM, Embedded C, C, C++, Go-Lang, Python, Java, matlab  \\
+%Operating Systems & Windows,  \\
+Tools and Technology: & Linux (Ubuntu, Red Hat, Raspbian), RTOSLatex, Git, NS3, TensorFlow: Keras, Robot Operating System (ROS), Amazon-AWS\\
+Databases: & MySql, MongoDB \\
+Version Control: & Github
+\end{tabularx}
 \end{rSection}
+
+\begin{rSection}{Publication}
+    mTRE-PAN: A Thesis on the development of a input-agnostic globally interpretable model to model translation in artificial intelligence. \hfill {\em Expected publication: December 2021}
+\end{rSection}
+
+%   \begin{rSection}{Projects}
+%       {\bf A study on US Non-Profit Grant-maker similarity as a function of proximity}, {\em Social Networks with machine learning} \hfill {\em Fall 2019}
+%       \\A collaborative project between the school of philanthropy and ECE. Time variant donation data was used to partition US grantmakers and the nonprofits they served into a bipartite graph. An RNN and a single layer classifier were trained in the data and used to develop a novel similarity index (Jdist) [\href{https://www.youtube.com/watch?v=kdroF47w-b8}{Link}].
+
+%   {\bf GitHub Notifier}
+%   \\This project aims at providing real time information of events from GitHub and notify you accordingly. The project is in ready-to-deployment stage on a demo server as a cron-job. The notification engine  used for real time tracking is completely based on the python implementation assembled in an Android App with firebase cloud support.
+
+%   \end{rSection}
+
+
+
 % 
 % 
 % \newpage
-\begin{rSection}{Work Experience}
-\begin{rSubsection}{Reversible Alphabet Pvt. Ltd., India}{Jun 2017 - Dec 2018}{Data Scientist}{}
- \item Created classification models for e-commerce websites using neural networks.
- \item Achieved exposure towards classification optimaization techniques for further specialization.
- \item Worked under an experenced Data Scientist and got deep insights related to optimization algorithms.
+\begin{rSection}{Projects}
+\begin{rSubsection}{mTRE-PAN}{Spring 2020 - Fall 2021}{\em Master's Thesis}{}
+ \item A novel ensemble model designed to tackle the problem of "black box" non-accountability in AI.
+ \item capable of extension to any existing pre-trained/deployed model without any interruption.
 \end{rSubsection}
-\begin{rSubsection}{Irreversible Alphabet Pvt. Ltd., India}{Jun 2016 - Dec 2016}{Data Scientist}{}
- \item Created classification models for e-commerce websites using neural networks.
- \item Achieved exposure towards classification optimaization techniques for further specialization.
- \item Worked under an experenced Data Scientist and got deep insights related to optimization algorithms.
+\begin{rSubsection}{Petri-Net Controller for Cat and Mouse problem}{Fall 2020}{\em Discrete event dynamic systems}{}
+ \item Built a Petri-Net Controller in Matlab, controlling doors in a home to maximize movement while preventing catastrophic failure in the Cat and Mouse problem.
 \end{rSubsection}
-
+\begin{rSubsection}{Data Classification}{Spring 2020}{\em Optimization methods for systems and controls}{}
+ \item Developed both parametric (multilayer) and non-parametric (KNN, Parzen Window) classifiers, and the techniques required to train them.
+\end{rSubsection}
+\begin{rSubsection}{US Grant-maker similarity as a function of proximity}{Fall 2019}{\em Social Networks with machine learning}{}
+ \item Utilized single and multilayered classifiers To predict labels of clustered data as part of multidisciplinary project.
+\end{rSubsection}
+\begin{rSubsection}{Pun Generator}{Spring 2019}{\em Database Management Systems}{}
+ \item Deployed a webpage based pun generator hosted on an Amazon-EC2 Linux server.
+ \item Featuring multi-level user registration and permission front-end, developed with Go-Lang, python and HTML. Server back-end developed used both relational and non-relational Databases (mysql, MongoDB).
+\end{rSubsection}
+\begin{rSubsection}{AgBot Weed and Feed competition \em{2nd place (university all time high)}}{Spring 2018 - Fall 2019}{\em Senior Design}{}
+ \item Converted a Yamaha 4x4 into an autonomous robot capable of fertilizing crops and recognizing one of three native Indiana crop weeds via image classification, and then spraying it with a specific weedkiller.
+ \item Extensive multi-team, multi-shareholder, multi-department, multi-sponsor project.
+ \item Ground up conversion combining mechanical, electrical and computer engineering.
+\end{rSubsection}
+\begin{rSubsection}{Predicting Power Outages Using NOAA Weather and ANN}{Fall 2017}{\em Artificial Intelligence}{}
+ \item Programmed from scratch an artificial neural network to predict weather caused power outages in northern Indiana using C++.
+\end{rSubsection}
 \end{rSection}
 % 
-\newpage
 \begin{rSection}{Academic Achievements} 
-\item Project 'XYZ' won Best Project under Environmental Solver category under AICTE, Government of India
-\item Recieved Scholarship For Higher Education(She) Component Under Inspire Scheme worth INR 4,00,000
-\item Achived A Grade in Diploma in Computer Science from IBM
-\item Won First Prize in Zonal technical quiz Competition Organized by IIT, Mumbai.
-\item Project 'XYZ' won Best Project under Environmental Solver category under AICTE, Government of India
-\item Recieved Scholarship For Higher Education(She) Component Under Inspire Scheme worth INR 4,00,000
-\item Achived A Grade in Diploma in Computer Science from IBM
-\item Won First Prize in Zonal technical quiz Competition Organized by IIT, Mumbai.
-\end{rSection}
-
-\begin{rSection}{Extra-Cirrucular} 
-\item Attended a workshop on Machine Learning and artificial intelligence from faculties of IIT Roorkee in 2019 and won zonal round for the challenge presented.
-\item Member of the  Institute of Engineers since 2017.
-\item Completed Basic Leadership Training under Project NSS, Gujarat
-\item Attended a workshop on Machine Learning and artificial intelligence from faculties of IIT Roorkee in 2019 and won zonal round for the challenge presented.
-\item Member of the  Institute of Engineers since 2017.
-\item Completed Basic Leadership Training under Project NSS, Gujarat
-\item Attended a workshop on Machine Learning and artificial intelligence from faculties of IIT Roorkee in 2019 and won zonal round for the challenge presented.
-\item Member of the  Institute of Engineers since 2017.
-\item Completed Basic Leadership Training under Project NSS, Gujarat
+\item Honors college Undergraduate member.
+\item Tau Beta Pi engineering honor society member.
+\item Deans list member from Fall 2015 onward.
 
 \end{rSection}
-\begin{rSection}{Research Profile}
- \item Student President, Technology and Research, IIT Gandhinagar
- \item Publication : ABC, IOT IEEE Transactions (Impact Factor: 9.3, Status: Published)
- \item Student President, Technology and Research, IIT Gandhinagar
- \item Publication : ABC, IOT IEEE Transactions (Impact Factor: 9.3, Status: Published)
- \item Student President, Technology and Research, IIT Gandhinagar
- \item Publication : ABC, IOT IEEE Transactions (Impact Factor: 9.3, Status: Published)
+
+\begin{rSection}{Extra-Curricular} 
+\item As part of an outreach program to encourage women in STEM: organized, developed and taught a AI-focused week long program to high school students. \hfill \em{Summer 2019}
+\item Extensively privately tutored other students for free, as a result faculty have requested me to act as a Teaching Assistant on multiple occasions. \hfill \em{Nearly entire school career}
 \end{rSection}
-
-
-
-
 
 \end{document}
