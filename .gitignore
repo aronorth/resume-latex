@@ -1,5 +1,6 @@
 #ignore everything
 *
+.swp
 #except
 !.gitignore
 !*.tex
