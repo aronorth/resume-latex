@@ -1,0 +1,82 @@
+\documentclass{resume} 
+\usepackage[left=0.75in,top=0.1in,right=0.75in,bottom=0.1in]{geometry} 
+\usepackage{hyperref}
+\usepackage{tabularx}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[2]{\hspace{0em}\rlap{#1}}
+\name{Mohammad Almerri} % Your name
+\address{(+1)202-568-5475 \\ malmerri42@gmail.com}
+\address{Indianapolis \\ IN 46202}
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+{\bf Purdue School of Engineering and Technology, IUPUI} \hfill  January 2019 - December 2021
+\\ MS with Thesis in Computer Engineering.\hfill { GPA: 3.9/4.0 }
+
+{\bf Purdue School of Engineering and Technology, IUPUI} \hfill  August 2013 - May 2018 
+\\ BS in Computer Engineering with a Minor in Mathematics.
+\hfill { GPA: 3.8/4.0 }
+
+
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+\begin{tabularx}{\textwidth}{ @{} >{\bfseries}l @{\hspace{6ex}}X }
+Languages: & Assembly-ARM, Embedded C, C, C++, Go-Lang, Python, Java, matlab  \\
+Tools and Technology: & Linux (Ubuntu, Red Hat, Raspbian), RTOS, Latex, Git, NS3, TensorFlow, Keras, Robot Operating System (ROS), Amazon-AWS\\
+Databases: & MySql, MongoDB \\
+Version Control: & Github
+\end{tabularx}
+\end{rSection}
+
+%Cannot add since it isnt published yet
+%   \begin{rSection}{Publication}
+%       mTRE-PAN: A Thesis on the development of a input-agnostic globally interpretable model to model translation in artificial intelligence. \hfill {\em Expected publication: December 2021}
+%   \end{rSection}
+
+
+% 
+% 
+% \newpage
+\begin{rSection}{Projects}
+\begin{rSubsection}{mTRE-PAN}{Spring 2020 - Fall 2021}{\em Master's Thesis}{}
+ \item An interpretable model for neural networks using decision trees and SVM.
+\end{rSubsection}
+%   \begin{rSubsection}{Petri-Net Controller for Cat and Mouse problem}{Fall 2020}{\em Discrete event dynamic systems}{}
+%    \item Built a Petri-Net Controller in Matlab, controlling doors in a home to maximize movement while preventing catastrophic failure in the Cat and Mouse problem.
+%   \end{rSubsection}
+\begin{rSubsection}{Data Classification}{Spring 2020}{\em Optimization methods for systems and controls}{}
+ \item Developed both parametric (multilayer) and non-parametric (KNN, Parzen Window) classifiers, and the techniques required to train them.
+\end{rSubsection}
+\begin{rSubsection}{US Grant-maker similarity as a function of proximity}{Fall 2019}{\em Social Networks with machine learning}{}
+ \item Utilized single and multilayered classifiers to predict labels of clustered data as part of multidisciplinary project.
+\end{rSubsection}
+\begin{rSubsection}{Pun Generator}{Spring 2019}{\em Database Management Systems}{}
+ \item Deployed a webpage based pun generator hosted on an Amazon-EC2 Linux server.
+ \item Featuring multi-level user registration and permission front-end, developed with Go-Lang, python and HTML. Server back-end developed using both relational and non-relational Databases (mysql, MongoDB).
+\end{rSubsection}
+\begin{rSubsection}{AgBot Weed and Feed competition \em{2nd place (university all time high)}}{Spring 2018 - Fall 2019}{\em Senior Design}{}
+ \item Converted a Yamaha 4x4 into an autonomous robot capable of fertilizing crops and recognizing one of three native Indiana crop weeds via image classification, and then spraying it with a specific weedkiller.
+ \item Extensive multi-team, multi-shareholder, multi-department, multi-sponsor project.
+ \item Ground up conversion combining mechanical, electrical and computer engineering.
+\end{rSubsection}
+\begin{rSubsection}{Predicting Power Outages Using NOAA Weather Data and ANN}{Fall 2017}{\em Artificial Intelligence}{}
+ \item Programmed from scratch an artificial neural network to predict weather caused power outages in northern Indiana using C++.
+\end{rSubsection}
+\end{rSection}
+% 
+\begin{rSection}{Academic Achievements} 
+\item Honors college Undergraduate member. \hfill Fall 2016
+%\item Multiple-time top 100 student nominee.
+\item Tau Beta Pi engineering honor society member. \hfill Fall 2016
+\item Deans list \hfill Fall 2013 - Spring 2018
+\end{rSection}
+
+\begin{rSection}{Extra-Curricular} 
+\item As part of an outreach program to encourage women in STEM; organized, developed and taught a AI-focused week long program to high school students. \hfill Summer 2020
+%\item Extensively privately tutored other students for free, as a result faculty have requested me to act as a Teaching Assistant on multiple occasions. \hfill \emph{Nearly entire school career}
+\end{rSection}
+
+\end{document}
