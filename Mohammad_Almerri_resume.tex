@@ -1,12 +1,19 @@
 \documentclass{resume} 
 \usepackage[left=0.25in,top=0.25in,right=0.25in,bottom=0.5in]{geometry} 
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
 \usepackage{tabularx}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[2]{\hspace{0em}\rlap{#1}}
+
+
 \name{Mohammad Almerri} % Your name
 \address{(+1)202-568-5475 \\ malmerri42@gmail.com}
 \address{Indianapolis \\ IN 46202}
+\address{Github: \href{https://github.com/malmerri42}{malmerri42}}
 
 \begin{document}
 \begin{rSection}{Education}
@@ -23,10 +30,10 @@
 
 \begin{rSection}{Technical Skills}
 \begin{tabularx}{\textwidth}{ @{} >{\bfseries}l @{\hspace{6ex}}X }
-Languages: & Assembly-ARM, Embedded C, C, C++, Go-Lang, Python, Java, matlab  \\
-Tools and Technology: & Linux (Ubuntu, Red Hat, Raspbian), RTOS, Latex, Git, NS3, TensorFlow, Keras, Robot Operating System (ROS), Amazon-AWS\\
+Languages: & C++, Python, matlab, Go-Lang, C, Embedded C, Assembly-ARM, Java  \\
+Tools and Technology: & Linux (Ubuntu, Red Hat, Raspbian), Latex, RTOS, NS3, TensorFlow, Keras, Robot Operating System (ROS), Amazon-AWS\\
 Databases: & MySql, MongoDB \\
-Version Control: & Github
+Version Control: & Git, Github
 \end{tabularx}
 \end{rSection}
 
@@ -45,7 +52,9 @@ Version Control: & Github
 \begin{rSection}{Projects}
 
 \begin{rSubsection}{MTRE-PAN}{Spring 2020 - Fall 2021}{{Master's Thesis}}{}
-    \item A novel interpretable hybrid model for neural networks using decision trees and SVM.
+    \item Developed a novel interpretable hybrid model for neural networks using decision trees and SVM.
+    \item Creates an interpretable clone of a trained machine learning model to facilitate auditing.
+    \item Programmed in C++, using MLPACK and Armadillo libraries.
 \end{rSubsection}
 
 %   \begin{rSubsection}{Petri-Net Controller for Cat and Mouse problem}{Fall 2020}{\em Discrete event dynamic systems}{}
@@ -89,14 +98,14 @@ Version Control: & Github
 \end{rSection}
 % 
 \begin{rSection}{Academic Achievements} 
-    \item Honors college Undergraduate member. \hfill Fall 2016
+    \item Honors college Undergraduate member \hfill Fall 2016
     %\item Multiple-time top 100 student nominee.
-    \item Tau Beta Pi engineering honor society member. \hfill Fall 2016
+    \item Tau Beta Pi engineering honor society member \hfill Fall 2016
     \item Deans list \hfill Fall 2013 - Spring 2018
 \end{rSection}
 
 \begin{rSection}{Extra-Curricular} 
-    \item As part of an outreach program to encourage women in STEM; organized, developed and taught a AI-focused week long program to high school students. \hfill Summer 2020
+    \item Organized, developed and taught a AI-focused week long program to high school students as part of an outreach program to encourage women in STEM. \hfill Summer 2020
 %\item Extensively privately tutored other students for free, as a result faculty have requested me to act as a Teaching Assistant on multiple occasions. \hfill \emph{Nearly entire school career}
 \end{rSection}
 
