@@ -20,7 +20,7 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[9pt]{extarticle} % Font size and paper type
+\LoadClass[10pt]{extarticle} % Font size and paper type
                             %Different document classes have different allowable font sizes
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
